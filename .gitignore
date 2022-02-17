@@ -3,7 +3,7 @@ mario/[Tt]emp/
 mario/[Oo]bj/
 mario/[Bb]uild/
 mario/[Bb]uilds/
-Assets/AssetStoreTools*
+mario/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
