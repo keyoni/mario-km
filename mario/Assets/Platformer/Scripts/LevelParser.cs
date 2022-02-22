@@ -59,14 +59,9 @@ namespace Platformer.Scripts
            
                 foreach (var letter in letters)
                 {
-                    // Todo - Instantiate a new GameObject that matches the type specified by letter
-                    // Todo - Position the new GameObject at the appropriate location by using row and column
-                    // Todo - Parent the new GameObject under levelRoot
-                    ///GameObject block = null;
                     if(!letter.Equals(" ")) {
                         switch (letter)
                         {
-                        
                             case 's':
                                 var block = Instantiate(stonePrefab, environmentRoot);
                                 block.transform.position = new Vector3(column, row, 0);

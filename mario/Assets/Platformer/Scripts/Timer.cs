@@ -33,19 +33,7 @@ namespace Platformer.Scripts
                 {
                     _time.text = _currentTime.ToString("000");
 
-                    // if (_currentTime is < 100 and >= 10)
-                    // {
-                    //     _time.text = _currentTime.ToString("000");
-                    // }
-                    // else if (_currentTime <=9.99 )
-                    // {
-                    //     _time.text = $"00{_currentTime:0}";
-                    // }
-                    // else
-                    // {
-                    //     _time.text = $"{_currentTime:0}";
-                    // }
-
+                  
                 }
 
         }
