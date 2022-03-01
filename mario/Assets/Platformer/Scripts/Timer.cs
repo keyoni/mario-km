@@ -1,12 +1,14 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Platformer.Scripts
 {
     public class Timer : MonoBehaviour
     {
         private TextMeshProUGUI _time;
+        public TextMeshProUGUI gameOverText;
         public int maxTime = 400;
         private float _currentTime;
         // Start is called before the first frame update
@@ -15,7 +17,7 @@ namespace Platformer.Scripts
             _time = GetComponent<TextMeshProUGUI>();
             _time.text = maxTime.ToString();
             _currentTime = maxTime;
-            
+            gameOverText.gameObject.SetActive(false);
 
         }
 
@@ -27,7 +29,7 @@ namespace Platformer.Scripts
                 if (_currentTime < 0)
                 {
                     _time.text = "000";
-                    //Todo Add GameOver 
+                    gameOverText.gameObject.SetActive(true);
                 }
                 else
                 {

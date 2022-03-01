@@ -11,6 +11,9 @@ namespace Platformer.Scripts
         public GameObject brickPrefab;
         public GameObject questionBoxPrefab;
         public GameObject stonePrefab;
+        public GameObject skwerPrefab;
+        public GameObject coinPrefab;
+        public GameObject goalPrefab;
         public Transform environmentRoot;
 
         // --------------------------------------------------------------------------
@@ -82,6 +85,18 @@ namespace Platformer.Scripts
                             case 'x':
                                 var block4 = Instantiate(rockPrefab, environmentRoot);
                                 block4.transform.position = new Vector3(column, row, 0);
+                                break;
+                            case  'k':
+                                var block5 = Instantiate(skwerPrefab, environmentRoot);
+                                block5.transform.position = new Vector3(column, row, 0);
+                                break;
+                            case  'c':
+                                var block6 = Instantiate(coinPrefab, environmentRoot);
+                                block6.transform.position = new Vector3(column, row, 0);
+                                break;
+                            case  'g':
+                                var block7 = Instantiate(goalPrefab, environmentRoot);
+                                block7.transform.position = new Vector3(column, row, 0);
                                 break;
                         
                         }

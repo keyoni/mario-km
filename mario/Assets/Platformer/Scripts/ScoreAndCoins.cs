@@ -36,4 +36,10 @@ public class ScoreAndCoins : MonoBehaviour
         _coinCount += 1;
         coinText.text = $"x{_coinCount:00}";
     }
+    public void CoinDecrease()
+    {
+        if(_coinCount > 0)
+             _coinCount -= 1;
+        coinText.text = $"x{_coinCount:00}";
+    }
 }
